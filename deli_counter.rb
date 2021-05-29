@@ -3,7 +3,7 @@ def line(array)
   when 0
     puts "The line is currently empty."
   else
-    begin_string = "The line is currently: "
+    begin_string = "The line is currently:"
     array.each.with_index() do |name, index|
        begin_string<<" #{index+1}. #{name}"
     end

@@ -20,8 +20,11 @@ def now_serving(array)
   if array.count == 0
     puts "There is nobody waiting to be served!"
   else
+    #little clutter but still works as expected
+    #or array.first
     name = array[0]
     puts "Currently serving #{name}."
+    #array.shift 
     array.delete(name)
   end
 end

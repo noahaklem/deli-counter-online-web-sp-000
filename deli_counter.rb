@@ -11,14 +11,8 @@ def line(array)
   end
 end
 
-def take_a_number(array, person)
-  welcome_string = "Welcome, "
-  line_string = "You are number "
-  if array.count
-  array.map.with_index() do |name,index|
-    welcome_string<<"#{person}."
-    line_string<< "#{index+1} in line."
-  end
-  puts welcome_string + line_string
+def take_a_number(array, name)
+  array << name
+  "Welcome, #{name}. You are "
 end
   

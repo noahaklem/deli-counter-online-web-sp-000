@@ -17,8 +17,10 @@ def take_a_number(array, name)
 end
 
 def now_serving(array)
-  
-  name = array[0]
-  puts "Currently serving #{name}."
-  array.delete(name)
+  if array.count == 0
+    puts 
+  else
+    name = array[0]
+    puts "Currently serving #{name}."
+    array.delete(name)
 end

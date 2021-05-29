@@ -19,4 +19,5 @@ end
 def now_serving(array)
   name = array[0]
   puts "Currently serving #{name}."
-  array.shift
+  array.delete(name)
+end

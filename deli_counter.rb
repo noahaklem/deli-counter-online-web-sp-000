@@ -12,6 +12,12 @@ def line(array)
 end
 
 def take_a_number(array, person)
-  array<< person
+  welcome_string = "Welcome, "
+  line_string = "You are number "
+  array.map.with_index() do |name,index|
+    welcome_string<<"#{person}."
+    line_string<< "#{index+1} in line."
+  end
+  puts welcome_string + line_string
 end
   

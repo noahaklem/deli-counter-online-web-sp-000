@@ -7,5 +7,6 @@ def line(array)
     array.each_with_index(1) do |name, index|
        begin_string<<"#{index+1}. #{name}"
     end
+    puts begin_string
   end
 end

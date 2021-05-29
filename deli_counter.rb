@@ -10,3 +10,8 @@ def line(array)
     puts begin_string
   end
 end
+
+def take_a_number(array, person)
+  array<< person
+end
+  

@@ -17,4 +17,6 @@ def take_a_number(array, name)
 end
 
 def now_serving(array)
-  puts array
+  name = array[0]
+  puts "Currently serving #{name}."
+  array.

@@ -5,7 +5,7 @@ def line(array)
   else
     begin_string = "The line is currently: "
     array.each.with_index(1) do |name, index|
-       begin_string<<"#{index+1}. #{name}"
+       begin_string<<"#{index} . #{name}"
     end
     puts begin_string
   end
